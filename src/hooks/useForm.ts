@@ -49,7 +49,9 @@ const useForm = <T extends Record<string, DataType>>(
         setErrors(e.errors as FormErrors<T>);
       });
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     e.persist();
     const { name, value } = e.target;
     const newData = { ...formData, [name]: value };

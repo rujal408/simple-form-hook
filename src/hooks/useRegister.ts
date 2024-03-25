@@ -22,18 +22,18 @@ const useRegister = (
     };
 
     const setInitialValues = () => {
-      if (ref.current) {
+      if (ref.current && ref.current.elements) {
         Array.from(ref.current.elements).forEach((element) => {
           switch (element.nodeName) {
             case "INPUT": {
               const el = element as HTMLInputElement;
-              if (!formData[el?.name]) {
+              if (!formData?.[el?.name]) {
                 formInputs[el?.name] = undefined;
               }
             }
             case "SELECT": {
-              const el = element as HTMLInputElement;
-              if (!formData[el?.name]) {
+              const el = element as HTMLSelectElement;
+              if (!formData?.[el?.name]) {
                 formInputs[el?.name] = undefined;
               }
             }
