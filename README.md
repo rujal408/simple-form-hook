@@ -1,4 +1,5 @@
 # Example
+```jsx
 const { handleChange, handleSubmit, ref, errors } = useForm<ILogin>({
   defaultValue: {
     username: "",
@@ -56,3 +57,5 @@ return (
     <button>Log In</button>
   </form>
 );
+```
+
