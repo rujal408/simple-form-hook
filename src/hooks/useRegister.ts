@@ -30,15 +30,17 @@ const useRegister = (
               if (!formData?.[el?.name]) {
                 formInputs[el?.name] = undefined;
               }
+              break;
             }
             case "SELECT": {
               const el = element as HTMLSelectElement;
               if (!formData?.[el?.name]) {
                 formInputs[el?.name] = undefined;
               }
+              break;
             }
             default:
-              return;
+              break;
           }
         });
       }
