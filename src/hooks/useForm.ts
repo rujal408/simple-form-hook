@@ -1,5 +1,3 @@
-"use client";
-
 import { ChangeEvent, FormEvent, useState } from "react";
 import useRegister from "./useRegister";
 import validate from "../utils/validate";
