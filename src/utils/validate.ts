@@ -12,12 +12,10 @@ function validate<T>(
         const value = inputs[fieldName];
         const validationCriteria = validations[fieldName];
         if (validationCriteria) {
-          if (validationCriteria?.required) {
-            if (!value) {
-              Object.assign(errors, {
-                [fieldName]: validationCriteria?.message || "",
-              });
-            }
+          if (validationCriteria?.required && !value) {
+            Object.assign(errors, {
+              [fieldName]: validationCriteria?.message || "",
+            });
           } else if (validationCriteria?.validate) {
             const isValid = validationCriteria.validate(inputs[fieldName]);
             if (!isValid.requirement) {
