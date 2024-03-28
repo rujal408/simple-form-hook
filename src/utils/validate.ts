@@ -29,11 +29,10 @@ function validate<T>(
             }
           }
         }
-
-        Object.keys(errors).length > 0
-          ? rej({ status: false, errors })
-          : res({ status: true, errors });
       });
+      Object.keys(errors).length > 0
+        ? rej({ status: false, errors })
+        : res({ status: true, errors });
     } else {
       res({ status: true, errors });
     }
