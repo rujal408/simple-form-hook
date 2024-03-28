@@ -3,8 +3,8 @@
   "main": "dist/index.js",
   "source": "src/index.ts",
   "version": "1.0.0",
-  "homepage": "https://github.com/rujal408/simple-form-hook#readme",
-  "repository": "https://github.com/rujal408/simple-form-hook",
+  "homepage": "https://github.com/rujal408/simple-react-form-hook#readme",
+  "repository": "https://github.com/rujal408/simple-react-form-hook",
   "peerDependencies": {
     "react": "^18.2.0",
     "react-scripts": "5.0.1",
