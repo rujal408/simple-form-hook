@@ -3,7 +3,7 @@
   "main": "dist/index.js",
   "source": "src/index.ts",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/rujal408/simple-react-form-hook#readme",
   "repository": "https://github.com/rujal408/simple-react-form-hook",
   "peerDependencies": {
