@@ -7,29 +7,31 @@
   "homepage": "https://github.com/rujal408/simple-react-form-hook#readme",
   "repository": {
     "type": "git",
-    "url":"https://github.com/rujal408/simple-react-form-hook"
+    "url": "https://github.com/rujal408/simple-react-form-hook"
   },
   "files": [
     "dist",
     "src"
   ],
+  "license": "MIT",
   "peerDependencies": {
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.1.6",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.91",
     "@types/react": "^18.2.67",
-    "rollup": "^4.13.2",
-    "rollup-plugin-terser": "^7.0.2",
+    "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.4.3"
   },
   "scripts": {
-    "build:dev": "rollup -c --environment NODE_ENV:development",
-    "build": "rollup -c --environment NODE_ENV:production"
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom --watch",
+    "test:coverage": "tsdx test --env=jsdom --silent --verbose --coverage"
   },
+  "typings": "dist/index.d.ts",
   "eslintConfig": {
     "extends": [
       "react-app",
