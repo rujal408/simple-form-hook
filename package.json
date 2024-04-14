@@ -5,11 +5,16 @@
   "type": "module",
   "version": "1.0.1",
   "homepage": "https://github.com/rujal408/simple-react-form-hook#readme",
-  "repository": "https://github.com/rujal408/simple-react-form-hook",
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/rujal408/simple-react-form-hook"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
