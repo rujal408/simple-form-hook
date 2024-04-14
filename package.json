@@ -2,6 +2,12 @@
   "name": "simple-react-form-hook",
   "main": "dist/index.js",
   "source": "src/index.ts",
+  "author": {
+    "name": "Rujal Sapkota",
+    "email": "rujal408@gmail.com"
+  },
+  "umd:main": "dist/simple-react-form-hook.umd.production.js",
+  "module": "dist/simple-react-form-hook.es.production.js",
   "type": "module",
   "version": "1.0.1",
   "homepage": "https://github.com/rujal408/simple-react-form-hook#readme",
