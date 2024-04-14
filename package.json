@@ -9,7 +9,7 @@
   "umd:main": "dist/simple-react-form-hook.umd.production.js",
   "module": "dist/simple-react-form-hook.es.production.js",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/rujal408/simple-react-form-hook#readme",
   "repository": {
     "type": "git",
