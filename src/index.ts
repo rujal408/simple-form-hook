@@ -1,3 +1,1 @@
-import useForm from "./hooks/useForm";
-
-export default useForm;
+export {default as useForm} from './hooks/useForm'
